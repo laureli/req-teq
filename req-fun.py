@@ -2,12 +2,13 @@ import requests, sys
 
 # enter url on the commandline
 s = str(sys.argv[1])
+
+# make style doc to clean this up.
 breaker = '- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -'
 breaker1 = ' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -'
 
 for url in range(1, len(sys.argv)):
     s = sys.argv[url]
-    print s
 
     r = requests.get(s, verify=False)
     print "The URL you're checking is %s" % s
