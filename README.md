@@ -8,4 +8,4 @@ how to use:
 - accepts multiple urls at a time and steps through each in sequence.
 - returns all headers for the site and then allows for individual headers to be inspected
 
-not really ready for primetime yet. 
+not really ready for primetime yet, but comments are welcome.
