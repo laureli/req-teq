@@ -7,11 +7,12 @@ s = str(sys.argv[1])
 breaker = '- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -'
 breaker1 = ' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -'
 
+# url or IP address.
 for url in range(1, len(sys.argv)):
     s = sys.argv[url]
 
     r = requests.get(s, verify=False)
-    print "The URL you're checking is %s" % s
+    print "The address you're checking is %s" % s
     print "Header count is %s" % (len(r.headers))
 
 # get / print all of the headers
